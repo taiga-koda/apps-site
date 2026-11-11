@@ -1,0 +1,22 @@
+---
+description: Koda Apps 公開サイトのルール
+globs: "**/*.{html,css,md}"
+alwaysApply: false
+---
+## 原則
+- このファイルを参照したら、「coding-rule.mdc」を参照したと必ず明記する
+- 回答は日本語で行う。ルートの AGENTS.md（このリポジトリの唯一のルールファイル。`CLAUDE.md` はそのシンボリックリンク）に従う
+
+# ルール
+
+## 構成
+- 静的 HTML のみ。ビルドやサーバーは置かない
+- アプリのページは `<app-slug>/support/` と `<app-slug>/privacy/`（英語は `<app-slug>/en/...`）
+- シフかわの原本は `taiga-koda/mobile-apps` の `apps/shift-image/store/site/`。公開時に `shift-image/` へコピーする
+- トップのアプリ一覧（`index.html`）の正はこのリポジトリ
+
+## 実装
+- 解析タグ・Cookie・外部フォント・外部スクリプトを足さない
+- 「オフライン」「完全オフライン」とは書かない
+- 秘密情報をコミットしない
+- ページ間リンクは相対パスにする
